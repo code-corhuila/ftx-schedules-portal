@@ -1,25 +1,26 @@
 # ftx-schedules-portal
 
-> schedules bounded context: web UI (remote)
+Portal frontend para la administración de horarios semanales de las canchas de Futbolix.
 
-Part of the **LMS Library** distributed system — team `lms-library`, Grupo 2.
-Governance and documentation live in [`library-docs`](https://github.com/code-corhuila/library-docs).
+## Tecnologías
 
-## Branching
+- React 19
+- JavaScript
+- Vite
+- CSS
 
-Three permanent branches. **None of them accepts a direct commit** — you enter through a child
-branch and leave through a Pull Request.
+## Funcionalidades
 
-```
-develop  <--PR--  feat/... fix/... chore/...
-qa       <--PR--  qa/...
-main     <--PR--  release/...  hotfix/...
-```
+- Selección de cancha.
+- Visualización de los siete días de la semana.
+- Edición de horas de apertura y cierre.
+- Validación del horario.
+- Cierre de un día mediante confirmación.
+- Diseño adaptable a dispositivos móviles.
 
-Promotion happens **by re-application** (`git cherry-pick -x`), never by merging one permanent
-branch into another: `merge develop -> qa` and `merge qa -> main` do not exist in this model.
+## Desarrollo
 
-`main` requires **1 approval from `ariel5253`**. On `develop` and `qa` the team sets its own review
-rule.
+Instalar dependencias:
 
-Full policy: `00-governance/branching-policy.md` in `library-docs`.
+```bash
+npm install
